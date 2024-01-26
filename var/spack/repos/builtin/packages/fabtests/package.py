@@ -16,6 +16,7 @@ class Fabtests(AutotoolsPackage):
 
     license("GPL-2.0-only")
 
+    version("1.20.1", sha256="687884b6fd3046f46e2f878e19e76e4506b50950bd2f59a731618b89d02a5436")
     version("1.20.0", sha256="61d483452163b39d81dcb9f578e5d9007817e0496235bc2aac1e82b7737fd65e")
     version("1.19.0", sha256="82d714020df9258cfdd659c51f2be8f4507cbe157c7f03c992c70fc528d8d837")
     version("1.18.2", sha256="3d85486ff80151defdb66414a851a9a9a2d4adc6cf696e2b8e4bb3ce340512c2")
@@ -38,6 +39,7 @@ class Fabtests(AutotoolsPackage):
     version("1.4.2", sha256="3b78d0ca1b223ff21b7f5b3627e67e358e3c18b700f86b017e2233fee7e88c2e")
 
     versions = [
+        "1.20.1",
         "1.20.0",
         "1.19.0",
         "1.18.2",
