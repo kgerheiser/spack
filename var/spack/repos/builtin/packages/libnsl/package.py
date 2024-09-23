@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+import os
 
 class Libnsl(AutotoolsPackage):
     """This library contains the public client interface for NIS(YP) and NIS+
@@ -39,3 +40,8 @@ class Libnsl(AutotoolsPackage):
     def autoreconf(self, spec, prefix):
         autoreconf = which("autoreconf")
         autoreconf("-fi")
+
+    @run_after("install")
+    def add_symlink(self):
+        spec = self.spec
+        os.symlink(join_path(self.prefix.lib, "libnsl.so.2"), join_path(self.prefix.lib, "libnsl.so.1"))
