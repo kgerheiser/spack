@@ -16,6 +16,8 @@ class Fabtests(AutotoolsPackage):
 
     license("GPL-2.0-only")
 
+    version("1.22.0", sha256="140ad1d9fa6e03c13d0ce62fe4c158777a218825f9837b121aa75e1edb869e44")
+    version("1.21.1", sha256="3d9eacdfb64066609593a615af5cfd440ee1cbc71ade394d09aaade38698f3ea")
     version("1.21.0", sha256="d022a186d37bd6ccb52303e0588c28e29f0f56c25a384c37acb16c881ba99e64")
     version("1.20.2", sha256="624beb02ffc8e325834545810566330f2a1204d5c6ad015ba095303121cb8ae6")
     version("1.20.1", sha256="687884b6fd3046f46e2f878e19e76e4506b50950bd2f59a731618b89d02a5436")
@@ -44,6 +46,8 @@ class Fabtests(AutotoolsPackage):
     depends_on("c", type="build")  # generated
 
     versions = [
+        "1.22.0",
+        "1.21.1",
         "1.21.0",
         "1.20.2",
         "1.20.1",
